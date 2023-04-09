@@ -1,0 +1,217 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+.layout{
+
+     display: grid;
+     grid-template-columns: auto auto;
+     background-color: #fcfcfc;
+     width: 40%;
+     margin: 8rem auto;
+     height: 26rem;
+     box-shadow: 40px 20px 20px hsl(221, 100%, 96%);
+     border-radius: 1.5rem;
+    
+}
+
+                               /* Container Left Side Style  */
+
+.container-left{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));   
+    width: 20rem;
+    border-radius: 1.5rem;
+   
+}
+
+.container-left .cart-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.container-left .cart-left h4{
+    margin: 40px 0;
+    font-size: 20px;
+    font-weight: 500;
+      color: #c7c6c6;
+}
+
+.container-left .cart-left  .score{
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));   
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.container-left .cart-left  .score h1{
+    padding-top: 15px;
+    font-size: 4rem;
+    color: rgb(243, 239, 239);
+    align-self: center;
+    margin-top: -10px;
+}
+
+.container-left .cart-left  .score h5 {
+    color: #b3b1b1;
+    align-self: center;
+    margin-top: -10px;
+}
+
+.container-left .great {
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: 500;
+
+}
+
+.container-left .text {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #cccaca;
+    width: 190px;
+    text-align: center;
+}
+
+                              /* Container Right Side Style  */
+
+.container-right{
+ background-color: hsl(0, 0%, 100%);
+ color: rgb(0, 0, 0);
+ width: 20rem;
+ border-top-right-radius: 1.5rem ;
+ border-bottom-right-radius: 1.5rem ;
+}
+.container-right .title{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 2rem;
+}
+
+.container-right .cart-right{
+    margin-top: 20px;
+}
+
+.container-right  .lists{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  1rem 35px;
+    border-radius: .5rem;
+    padding:10px 10px;    
+}
+
+.container-right .lists:nth-of-type(1){
+    background-color:  hsl(0, 100%, 67%, 0.050);
+}
+.container-right .lists:nth-of-type(2){
+    background-color:  hsl(39, 100%, 56%,0.050);
+}
+.container-right .lists:nth-of-type(3){
+    background-color: hsl(166, 100%, 37%,0.050)
+}
+.container-right .lists:nth-of-type(4){
+    background-color:   hsla(234, 85%, 45%,0.050);
+}
+
+.container-right  .lists .icon {
+    display: flex;
+}
+
+
+.container-right  .lists .icon .category-1 {
+color: hsl(0, 100%, 67%);
+margin-left: 10px;
+}
+.container-right  .lists .icon .category-2 {
+color:  hsl(39, 100%, 56%);
+margin-left: 10px;
+}
+.container-right  .lists .icon .category-3 {
+color:  hsl(166, 100%, 37%);
+margin-left: 10px;
+}
+.container-right  .lists .icon .category-4 {
+color: hsl(234, 85%, 45%);
+margin-left: 10px;
+}
+
+.container-right  .lists .scroe-list span {
+   font-size: 16px;
+   font-weight: 800;
+   color: #000;
+}
+.container-right  .lists .scroe-list h5{
+ color: rgb(129, 128, 128);
+ font-size: 16px;
+}
+
+
+.container-right .btn{
+   background-color:  hsl(224, 30%, 27%);
+   width:75%;
+   height: 2.5rem;
+   border-radius: 2rem;
+   margin-left:12%;
+   color: white;
+   font-size: 14px;
+  margin-top: 15px;
+  border: none;
+  box-shadow: 0 0 3px  hsl(224, 30%, 27%);
+  cursor: pointer;
+}
+.container-right .btn:hover{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));   
+}
+
+
+  /* Mobile Responsive Style  */
+
+@media screen and (max-width:375px) {
+ 
+    .layout{
+
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: -30px;
+   }
+
+     /* container left side style  */
+
+   .container-left{
+    width: 100%;  
+}
+.container-left .text {
+    font-size: 18px;
+    margin-top: 15px;
+    padding-bottom: 3rem;
+    color: #cccaca;
+    width: 80%;
+    text-align: center;
+}
+
+    /* container right side style  */
+
+.container-right{
+   width: 100%;
+  padding-bottom: 30px;
+   }
+   
+}
